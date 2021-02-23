@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Initiate</fullName>
+        <default>true</default>
+        <label>Initiate</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Collection</fullName>
+        <default>false</default>
+        <label>Data Collection</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Setup</fullName>
+        <default>false</default>
+        <label>Setup</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Enrollment</fullName>
+        <default>false</default>
+        <label>Enrollment</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Asset Transfer</fullName>
+        <default>false</default>
+        <label>Asset Transfer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Handoff</fullName>
+        <default>false</default>
+        <label>Handoff</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

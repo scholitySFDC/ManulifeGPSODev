@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project - Standard</fullName>
+    <description>Project business process milestones</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Asset Transfer</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Data Collection</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Enrollment</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Handoff</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Initiate</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Setup</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>
