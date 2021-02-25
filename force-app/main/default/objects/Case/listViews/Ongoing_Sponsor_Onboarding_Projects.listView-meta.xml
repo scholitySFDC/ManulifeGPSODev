@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ongoing_Sponsor_Onboarding_Projects</fullName>
+    <columns>Project_Name__c</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>Project_Health__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Project_Baseline</value>
+    </filters>
+    <label>Ongoing Sponsor Onboarding Projects</label>
+</ListView>
