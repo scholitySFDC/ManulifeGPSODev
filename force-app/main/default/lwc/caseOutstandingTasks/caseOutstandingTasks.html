@@ -1,5 +1,18 @@
 <template>
-    <div class="slds-card">
+  <!--
+  <lightning-card class="sizingBox" title="Number of Overdue Tasks" icon-name="standard:account">
+        
+        <div class="slds-align_absolute-center number">{numOverdueTasks}</div>
+    
+    
+    <p slot="footer"><a class="slds-card__footer-action" href="#">See Details
+      <span class="slds-assistive-text">Tasks</span>
+    </a>
+  </p>
+</lightning-card>
+  -->
+
+    <div class="slds-card sizingBox" >
         <div class="slds-card__header slds-grid">
             <header class="slds-media slds-media_center slds-has-flexi-truncate">
               <div class="slds-media__body">
@@ -12,13 +25,15 @@
             </header>
           </div>
           <div class="slds-card__body slds-card__body_inner">
-            <div class="slds-align_absolute-center number">7</div>
+            <div class="slds-align_absolute-center number">{numOverdueTasks}</div>
         </div>
+      </br>
+    </br>
   <footer class="slds-card__footer">
     <a class="slds-card__footer-action" href="#">See Details
       <span class="slds-assistive-text">Tasks</span>
     </a>
   </footer>
         
-    </div>
+    </div> 
 </template>

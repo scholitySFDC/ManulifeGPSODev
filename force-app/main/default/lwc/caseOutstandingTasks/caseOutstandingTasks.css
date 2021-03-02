@@ -1,4 +1,11 @@
 .number {
-    font-size: 193px;
+    font-size: 198px;
     color: #C5100F;
+}
+.sizingBox {
+    box-sizing:content-box;
+    width: 26rem;
+    height: 23.7rem;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
 }
