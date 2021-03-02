@@ -12,7 +12,7 @@
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
         <groupingColumn>STATUS</groupingColumn>
-        <legendPosition>Right</legendPosition>
+        <legendPosition>Bottom</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -27,10 +27,10 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>ASSIGNED</field>
+        <field>ASSIGNED_ALIAS</field>
     </columns>
     <columns>
-        <field>ASSIGNED_ALIAS</field>
+        <field>ASSIGNED</field>
     </columns>
     <columns>
         <field>OWNER_ROLE</field>
@@ -213,19 +213,7 @@
         <field>CREATED_DATE</field>
     </columns>
     <columns>
-        <field>LAST_UPDATE</field>
-    </columns>
-    <columns>
-        <field>ADDRESS2_STREET</field>
-    </columns>
-    <columns>
-        <field>ADDRESS2_LINE1</field>
-    </columns>
-    <columns>
         <field>ADDRESS2_LINE2</field>
-    </columns>
-    <columns>
-        <field>ADDRESS2_LINE3</field>
     </columns>
     <columns>
         <field>ADDRESS2_CITY</field>
@@ -274,6 +262,9 @@
     </columns>
     <columns>
         <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>Activity.Case__c</field>
     </columns>
     <currency>USD</currency>
     <format>Summary</format>

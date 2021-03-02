@@ -26,7 +26,7 @@
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
                 <groupingColumn>ASSIGNED</groupingColumn>
-                <groupingColumn>TASK</groupingColumn>
+                <groupingColumn>STATUS</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
@@ -37,8 +37,8 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Stacked Task by Owner</header>
-                <legendPosition>Right</legendPosition>
+                <header>Task by Owner</header>
+                <legendPosition>Bottom</legendPosition>
                 <report>GPSOReports/Stacked_Task_by_Owner_xOR</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
@@ -73,7 +73,7 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Task Status</header>
-                <legendPosition>Right</legendPosition>
+                <legendPosition>Bottom</legendPosition>
                 <maxValuesDisplayed>6</maxValuesDisplayed>
                 <report>GPSOReports/Task_Status_ndA</report>
                 <showPercentage>false</showPercentage>
