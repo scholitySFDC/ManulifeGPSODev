@@ -187,6 +187,11 @@
         <enabled>false</enabled>
     </classAccesses>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Case.Project_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Account.External_Id__c</field>
         <readable>true</readable>
@@ -296,6 +301,9 @@
         <field>Task.Case__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <layoutAssignments>
+        <layout>Global-Global Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Project - Standard</layout>
         <recordType>Case.Project_Baseline</recordType>
