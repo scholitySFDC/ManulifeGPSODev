@@ -204,7 +204,17 @@
     </classAccesses>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Case.Project_Name__c</field>
+        <field>Case.Stage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Event.Task_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Task_Status__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -318,7 +328,10 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
-        <layout>Global-Global Layout</layout>
+        <layout>Event-Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Project - Standard</layout>
