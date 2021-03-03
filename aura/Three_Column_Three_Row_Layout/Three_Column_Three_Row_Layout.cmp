@@ -1,0 +1,44 @@
+<aura:component implements="lightning:recordHomeTemplate" description="Custom Three-Column Three-Row Layout">
+    <aura:attribute name="header" type="Aura.Component[]" />
+    
+	<aura:attribute name="left_col" type="Aura.Component[]" />
+	<aura:attribute name="mid_col" type="Aura.Component[]" />
+	<aura:attribute name="right_col" type="Aura.Component[]" />
+    <aura:attribute name="path" type="Aura.Component[]" />
+	<aura:attribute name="detail" type="Aura.Component[]" />
+   	<aura:attribute name="right_sidebar" type="Aura.Component[]" />
+
+	<div>
+    	<lightning:layout multipleRows="true">
+        	<lightning:layoutItem size="12" padding="around-small" class="">
+            	{!v.header}
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout>
+
+	            <lightning:layoutItem size="4" padding="around-small" class="">
+    	        	{!v.left_col}
+        	    </lightning:layoutItem>
+            	<lightning:layoutItem size="4" padding="around-small" class="">
+            		{!v.mid_col}
+            	</lightning:layoutItem>
+            	<lightning:layoutItem size="4" padding="around-small" class="">
+					{!v.right_col}
+            	</lightning:layoutItem>
+
+        </lightning:layout>
+    	<lightning:layout multipleRows="true">
+        	<lightning:layoutItem size="12" padding="around-small" class="">
+            	{!v.path}
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout>
+            <lightning:layoutItem size="8" padding="around-small" class="">
+					{!v.detail}
+            </lightning:layoutItem>
+            <lightning:layoutItem size="4" padding="around-small" class="">
+					{!v.right_sidebar}
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

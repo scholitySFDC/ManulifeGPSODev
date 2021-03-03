@@ -1,0 +1,3 @@
+<apex:page id="CaseOverdueTask" lightningStylesheets="true" controller="CCaseOverdueTasks" sideBar="false" cache="false">
+    7
+</apex:page>

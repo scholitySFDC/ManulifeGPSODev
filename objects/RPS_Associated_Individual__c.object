@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom object to hold Contacts of an Account, child of Account object, also serves as the junction object between the Account and Contact objects, allowing a Contact to be linked to multiple Accounts, for RPS [US102]</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>RPS_Account__c</fullName>
+        <description>Custom master-detail lookup field to link the RPS Associated Individual to its parent Account, for RPS [US102]</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Associated Individuals</relationshipLabel>
+        <relationshipName>RPS_Associated_Individuals_Account</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>RPS_Active__c</fullName>
+        <description>Custom formula checkbox to serve as an indicator if the contact&apos;s association is active or not, based on specified start and end dates, for RPS [US102]</description>
+        <externalId>false</externalId>
+        <formula>AND
+(
+    RPS_Start_Date__c &lt;= TODAY(), 
+    OR
+    (
+        ISBLANK(RPS_End_Date__c), 
+        RPS_End_Date__c &gt; TODAY()
+    )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Active?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Broker_Dealer_Firm__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Custom Account lookup field to link the Associated Individual to the Broker/Dealer, for RPS</description>
+        <externalId>false</externalId>
+        <label>Broker/Dealer Firm</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Associated Individuals (Broker/Dealer Firm)</relationshipLabel>
+        <relationshipName>RPS_Associated_Individuals_Broker_Dealer</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Contact_Role__c</fullName>
+        <description>Custom picklist field to denote the contact&apos;s association type to the account, for RPS [US102]</description>
+        <externalId>false</externalId>
+        <label>Contact Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>RPS_Contact_Type__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Producer</fullName>
+                    <default>false</default>
+                    <label>Producer</label>
+                </value>
+                <value>
+                    <fullName>RIA</fullName>
+                    <default>false</default>
+                    <label>RIA</label>
+                </value>
+                <value>
+                    <fullName>Advisor Firm Administrative Assistant</fullName>
+                    <default>false</default>
+                    <label>Advisor Firm Administrative Assistant</label>
+                </value>
+                <value>
+                    <fullName>Advisor Firm Business Contact</fullName>
+                    <default>false</default>
+                    <label>Advisor Firm Business Contact</label>
+                </value>
+                <value>
+                    <fullName>Advisor Firm External Wholesaler (Influencer)</fullName>
+                    <default>false</default>
+                    <label>Advisor Firm External Wholesaler (Influencer)</label>
+                </value>
+                <value>
+                    <fullName>Advisor Firm Investment Analyst</fullName>
+                    <default>false</default>
+                    <label>Advisor Firm Investment Analyst</label>
+                </value>
+                <value>
+                    <fullName>Advisor Firm Plan Consultant</fullName>
+                    <default>false</default>
+                    <label>Advisor Firm Plan Consultant</label>
+                </value>
+                <value>
+                    <fullName>Advisor Firm Relationship Manager</fullName>
+                    <default>false</default>
+                    <label>Advisor Firm Relationship Manager</label>
+                </value>
+                <value>
+                    <fullName>Advisor Firm RFP Analyst</fullName>
+                    <default>false</default>
+                    <label>Advisor Firm RFP Analyst</label>
+                </value>
+                <value>
+                    <fullName>Auditor CPA</fullName>
+                    <default>false</default>
+                    <label>Auditor CPA</label>
+                </value>
+                <value>
+                    <fullName>Competitor Contact</fullName>
+                    <default>false</default>
+                    <label>Competitor Contact</label>
+                </value>
+                <value>
+                    <fullName>ERISA Attorney</fullName>
+                    <default>false</default>
+                    <label>ERISA Attorney</label>
+                </value>
+                <value>
+                    <fullName>Fund Partner Analyst Contact</fullName>
+                    <default>false</default>
+                    <label>Fund Partner Analyst Contact</label>
+                </value>
+                <value>
+                    <fullName>Fund Partner External Wholesaler</fullName>
+                    <default>false</default>
+                    <label>Fund Partner External Wholesaler</label>
+                </value>
+                <value>
+                    <fullName>Fund Partner National Accounts Contact</fullName>
+                    <default>false</default>
+                    <label>Fund Partner National Accounts Contact</label>
+                </value>
+                <value>
+                    <fullName>Fund Partner Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Fund Partner Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>Payroll Provider General Contact</fullName>
+                    <default>false</default>
+                    <label>Payroll Provider General Contact</label>
+                </value>
+                <value>
+                    <fullName>Payroll Provider-Primary Contact (DB)</fullName>
+                    <default>false</default>
+                    <label>Payroll Provider-Primary Contact (DB)</label>
+                </value>
+                <value>
+                    <fullName>Payroll Provider-Primary Contact (DC)</fullName>
+                    <default>false</default>
+                    <label>Payroll Provider-Primary Contact (DC)</label>
+                </value>
+                <value>
+                    <fullName>Payroll Provider-Primary Contact (NQ)</fullName>
+                    <default>false</default>
+                    <label>Payroll Provider-Primary Contact (NQ)</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Administrative Fiduciary</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Administrative Fiduciary</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Administrator</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Administrator</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Committee Member</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Committee Member</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Compliance Contact</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Compliance Contact</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Consultant</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Consultant</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Day to Day Admin</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Day to Day Admin</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Executive</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Executive</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor General Contact</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor General Contact</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Investment Contact</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Investment Contact</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Investment Fiduciary</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Investment Fiduciary</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Payroll Administrator</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Payroll Administrator</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor Payroll Contact</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor Payroll Contact</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor-Authorized Signor</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor-Authorized Signor</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor-Client Administrative Contact</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor-Client Administrative Contact</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor-Client Key Executive</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor-Client Key Executive</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor-Client Key Finance</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor-Client Key Finance</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor-Client Key HR</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor-Client Key HR</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor-Primary Contact (DB)</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor-Primary Contact (DB)</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor-Primary Contact (DC)</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor-Primary Contact (DC)</label>
+                </value>
+                <value>
+                    <fullName>Plan Sponsor-Primary Contact (NQ)</fullName>
+                    <default>false</default>
+                    <label>Plan Sponsor-Primary Contact (NQ)</label>
+                </value>
+                <value>
+                    <fullName>Proxy Reviewer</fullName>
+                    <default>false</default>
+                    <label>Proxy Reviewer</label>
+                </value>
+                <value>
+                    <fullName>TH - Accountant</fullName>
+                    <default>false</default>
+                    <label>TH - Accountant</label>
+                </value>
+                <value>
+                    <fullName>TH - Business Manager</fullName>
+                    <default>false</default>
+                    <label>TH - Business Manager</label>
+                </value>
+                <value>
+                    <fullName>TH - Consultant</fullName>
+                    <default>false</default>
+                    <label>TH - Consultant</label>
+                </value>
+                <value>
+                    <fullName>TH - Fund Administrator</fullName>
+                    <default>false</default>
+                    <label>TH - Fund Administrator</label>
+                </value>
+                <value>
+                    <fullName>TH - Fund Counsel</fullName>
+                    <default>false</default>
+                    <label>TH - Fund Counsel</label>
+                </value>
+                <value>
+                    <fullName>TH - Labor Trustee</fullName>
+                    <default>false</default>
+                    <label>TH - Labor Trustee</label>
+                </value>
+                <value>
+                    <fullName>TH - Management Trustee</fullName>
+                    <default>false</default>
+                    <label>TH - Management Trustee</label>
+                </value>
+                <value>
+                    <fullName>TH - McMorgan Contact</fullName>
+                    <default>false</default>
+                    <label>TH - McMorgan Contact</label>
+                </value>
+                <value>
+                    <fullName>TH - TPA Rep</fullName>
+                    <default>false</default>
+                    <label>TH - TPA Rep</label>
+                </value>
+                <value>
+                    <fullName>TPA (Sales) Rep</fullName>
+                    <default>false</default>
+                    <label>TPA (Sales) Rep</label>
+                </value>
+                <value>
+                    <fullName>TPA Accountant</fullName>
+                    <default>false</default>
+                    <label>TPA Accountant</label>
+                </value>
+                <value>
+                    <fullName>TPA Administrator</fullName>
+                    <default>false</default>
+                    <label>TPA Administrator</label>
+                </value>
+                <value>
+                    <fullName>TPA Consultant</fullName>
+                    <default>false</default>
+                    <label>TPA Consultant</label>
+                </value>
+                <value>
+                    <fullName>TPA Fund Administrator</fullName>
+                    <default>false</default>
+                    <label>TPA Fund Administrator</label>
+                </value>
+                <value>
+                    <fullName>TPA Fund Counsel</fullName>
+                    <default>false</default>
+                    <label>TPA Fund Counsel</label>
+                </value>
+                <value>
+                    <fullName>TPA Owner/Principle</fullName>
+                    <default>false</default>
+                    <label>TPA Owner/Principle</label>
+                </value>
+                <value>
+                    <fullName>Trustee Firm Business Contact</fullName>
+                    <default>false</default>
+                    <label>Trustee Firm Business Contact</label>
+                </value>
+                <value>
+                    <fullName>3(38)</fullName>
+                    <default>false</default>
+                    <label>3(38)</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Advisor</controllingFieldValue>
+                <valueName>Producer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Advisor</controllingFieldValue>
+                <valueName>RIA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Advisor</controllingFieldValue>
+                <valueName>3(38)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Advisor Firm Administrative Assistant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Advisor Firm Business Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Advisor Firm External Wholesaler (Influencer)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Advisor Firm Investment Analyst</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Advisor Firm Plan Consultant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Advisor Firm Relationship Manager</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Advisor Firm RFP Analyst</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Auditor CPA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Competitor Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>ERISA Attorney</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Fund Partner Analyst Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Fund Partner External Wholesaler</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Fund Partner National Accounts Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Fund Partner Sales Manager</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Payroll Provider General Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Payroll Provider-Primary Contact (DB)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Payroll Provider-Primary Contact (DC)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Payroll Provider-Primary Contact (NQ)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Administrative Fiduciary</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Administrator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Committee Member</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Compliance Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Consultant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Day to Day Admin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Executive</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor General Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Investment Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Investment Fiduciary</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Payroll Administrator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor Payroll Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor-Authorized Signor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor-Client Administrative Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor-Client Key Executive</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor-Client Key Finance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor-Client Key HR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor-Primary Contact (DB)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor-Primary Contact (DC)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Plan Sponsor-Primary Contact (NQ)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Proxy Reviewer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TH - Accountant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TH - Business Manager</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TH - Consultant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TH - Fund Administrator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TH - Fund Counsel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TH - Labor Trustee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TH - Management Trustee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TH - McMorgan Contact</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TH - TPA Rep</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TPA (Sales) Rep</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TPA Accountant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TPA Administrator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TPA Consultant</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TPA Fund Administrator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TPA Fund Counsel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>TPA Owner/Principle</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Business Contact</controllingFieldValue>
+                <valueName>Trustee Firm Business Contact</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RPS_Contact_Type__c</fullName>
+        <description>Custom picklist to denote the type of individual&apos;s association to the account, for RPS</description>
+        <externalId>false</externalId>
+        <label>Contact Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advisor</fullName>
+                    <default>false</default>
+                    <label>Advisor</label>
+                </value>
+                <value>
+                    <fullName>Business Contact</fullName>
+                    <default>false</default>
+                    <label>Business Contact</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RPS_Contact__c</fullName>
+        <description>Custom master-detail lookup field to link the RPS Associated Individual to its Contact record [US102]</description>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Associated Roles</relationshipLabel>
+        <relationshipName>RPS_Associated_Individuals_Contact</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>RPS_Elite_Advisor__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Custom checkbox to note if the Associated Individual is an Elite Advisor for the selected Account, for RPS [US257]</description>
+        <externalId>false</externalId>
+        <label>Elite Advisor?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Email_Address__c</fullName>
+        <description>Custom email field to store an Associated Individual&apos;s Email Address, for RPS</description>
+        <externalId>true</externalId>
+        <label>Email Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPS_End_Date__c</fullName>
+        <description>Custom date field to hold the end date of the contact&apos;s association to the account, for RPS [US102]</description>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Enterprise_Total_AUM__c</fullName>
+        <description>Custom currency field to denote an Associated Individual&apos;s total Assets Under Management value for Enterprise, for RPS</description>
+        <externalId>false</externalId>
+        <label>Enterprise Total AUM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RPS_External_Associated_Individual_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>This field is added by Srini on 7/14/2016 as requested by Prabhu Balakrishnan (Prabhu_Balakrishnan@manulife.com) for initial data load activities</description>
+        <externalId>true</externalId>
+        <label>RPS External Associated Individual ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>RPS_GA_Total_AUM__c</fullName>
+        <description>Custom currency field to denote an Associated Individual&apos;s total Assets Under Management value for Signature, for RPS</description>
+        <externalId>false</externalId>
+        <label>Signature Total AUM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Grandparent_Value__c</fullName>
+        <description>Custom formula field to show the Account Name of the Account&apos;s Grandparent, for RPS</description>
+        <externalId>false</externalId>
+        <formula>RPS_Account__r.Parent.Parent.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Grandparent Value</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPS_ID__c</fullName>
+        <description>Custom formula field to display the Associated Individual ID for related lists, for RPS</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; &amp; Id , Name, &quot;_parent&quot;)</formula>
+        <label>ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPS_Key_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Custom checkbox to denote if this contact is a key contact with respect to the associated account, for RPS [US102]</description>
+        <externalId>false</externalId>
+        <label>Key Contact?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Mailing_City__c</fullName>
+        <description>Custom text field to store an Associated Individual&apos;s Mailing City, for RPS</description>
+        <externalId>false</externalId>
+        <label>Mailing City</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPS_Mailing_Geolocation__c</fullName>
+        <description>Custom Geolocation field to store the geolocation information of the Associated Individual&apos;s Mailing Address, for RPS</description>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Mailing Geolocation</label>
+        <required>false</required>
+        <scale>15</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Mailing_Street__c</fullName>
+        <description>Custom text area field to store an Associated Individual&apos;s Mailing Street, for RPS</description>
+        <externalId>false</externalId>
+        <label>Mailing Street</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Mailing_Zip_Postal_Code__c</fullName>
+        <description>Custom text field to store an Associated Individual&apos;s Mailing Zip/Postal Code, for RPS</description>
+        <externalId>false</externalId>
+        <label>Mailing Zip/Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPS_Parent_Value__c</fullName>
+        <description>Custom formula field to show the name of the Account&apos;s Parent, for RPS</description>
+        <externalId>false</externalId>
+        <formula>RPS_Account__r.Parent.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Value</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPS_Phone__c</fullName>
+        <description>Custom phone field to store an Associated Individual&apos;s Phone, for RPS</description>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Primary_Message__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( RPS_Primary__c , &quot;Kindly edit this association from the Contact page instead.&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Message</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPS_Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Custom checklist to denote if this association represents the contact&apos;s primary association to the account, for RPS</description>
+        <externalId>false</externalId>
+        <label>Primary</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Referenceable_Effective_Date__c</fullName>
+        <description>Custom date field to set the effective date of the Referenceable field, for RPS</description>
+        <externalId>false</externalId>
+        <label>Referenceable Effective Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Start_Date__c</fullName>
+        <description>Custom date field to hold the start date of the contact&apos;s association to the account, for RPS [US102]</description>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RPS_TRS_Total_AUM__c</fullName>
+        <description>Custom currency field to denote an Associated Individual&apos;s total Assets Under Management value for TRS, for RPS</description>
+        <externalId>false</externalId>
+        <label>TRS Total AUM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Total_AUM_As_Of_Date__c</fullName>
+        <description>Custom date field to denote the effective date of an Associated Individual&apos;s Total Assets Under Management value, for RPS</description>
+        <externalId>false</externalId>
+        <label>Total AUM As Of Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RPS_Total_AUM__c</fullName>
+        <description>Custom currency field to denote an Associated Individual&apos;s total Assets Under Management value, for RPS</description>
+        <externalId>false</externalId>
+        <label>Total AUM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Associated Individual</label>
+    <listViews>
+        <fullName>RPS_All_Associated_Individuals</fullName>
+        <columns>NAME</columns>
+        <columns>RPS_Account__c</columns>
+        <columns>RPS_Contact__c</columns>
+        <columns>RPS_Contact_Type__c</columns>
+        <columns>RPS_Contact_Role__c</columns>
+        <columns>RPS_Primary__c</columns>
+        <columns>RPS_Key_Contact__c</columns>
+        <columns>RPS_Elite_Advisor__c</columns>
+        <columns>RPS_Start_Date__c</columns>
+        <columns>RPS_End_Date__c</columns>
+        <columns>RPS_Active__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Associated Individuals</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ASIND-{0000000}</displayFormat>
+        <label>Associated Individual ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Associated Individuals</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>RPS_Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RPS_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RPS_Contact_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RPS_Contact_Role__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RPS_Key_Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RPS_Elite_Advisor__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RPS_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RPS_End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RPS_Active__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>RPS_Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RPS_Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RPS_Contact_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RPS_Contact_Role__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RPS_Key_Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RPS_Elite_Advisor__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RPS_Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RPS_End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RPS_Active__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RPS_Account__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RPS_Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RPS_Contact_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RPS_Contact_Role__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RPS_Key_Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RPS_Elite_Advisor__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RPS_Start_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RPS_End_Date__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RPS_Active__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>RPS_Account__c</searchFilterFields>
+        <searchFilterFields>RPS_Contact__c</searchFilterFields>
+        <searchFilterFields>RPS_Contact_Type__c</searchFilterFields>
+        <searchFilterFields>RPS_Contact_Role__c</searchFilterFields>
+        <searchFilterFields>RPS_Key_Contact__c</searchFilterFields>
+        <searchFilterFields>RPS_Elite_Advisor__c</searchFilterFields>
+        <searchFilterFields>RPS_Start_Date__c</searchFilterFields>
+        <searchFilterFields>RPS_End_Date__c</searchFilterFields>
+        <searchFilterFields>RPS_Active__c</searchFilterFields>
+        <searchResultsAdditionalFields>RPS_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RPS_Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RPS_Contact_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RPS_Contact_Role__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RPS_Key_Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RPS_Elite_Advisor__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RPS_Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RPS_End_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RPS_Active__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>RPS_New_Contact</fullName>
+        <availability>online</availability>
+        <description>Custom button to redirect the user to the New Contact page</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Contact</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/setup/ui/recordtypeselect.jsp?ent=Contact&amp;retURL=%2F{!Account.Id}&amp;save_new_url=%2F003%2Fe%3FretURL%3D%252F{!Account.Id}%26accid%3D{!Account.Id}</url>
+    </webLinks>
+</CustomObject>

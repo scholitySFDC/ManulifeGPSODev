@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Associated Individual</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Associated Individuals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>RPS_Account__c</name>
+        <relationshipLabel><!-- Associated Individuals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active? --></label>
+        <name>RPS_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broker/Dealer Firm --></label>
+        <name>RPS_Broker_Dealer_Firm__c</name>
+        <relationshipLabel><!-- Associated Individuals (Broker/Dealer Firm) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Role --></label>
+        <name>RPS_Contact_Role__c</name>
+        <picklistValues>
+            <masterLabel>3(38)</masterLabel>
+            <translation><!-- 3(38) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisor Firm Administrative Assistant</masterLabel>
+            <translation><!-- Advisor Firm Administrative Assistant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisor Firm Business Contact</masterLabel>
+            <translation><!-- Advisor Firm Business Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisor Firm External Wholesaler (Influencer)</masterLabel>
+            <translation><!-- Advisor Firm External Wholesaler (Influencer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisor Firm Investment Analyst</masterLabel>
+            <translation><!-- Advisor Firm Investment Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisor Firm Plan Consultant</masterLabel>
+            <translation><!-- Advisor Firm Plan Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisor Firm RFP Analyst</masterLabel>
+            <translation><!-- Advisor Firm RFP Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advisor Firm Relationship Manager</masterLabel>
+            <translation><!-- Advisor Firm Relationship Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auditor CPA</masterLabel>
+            <translation><!-- Auditor CPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Contact</masterLabel>
+            <translation><!-- Competitor Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERISA Attorney</masterLabel>
+            <translation><!-- ERISA Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Partner Analyst Contact</masterLabel>
+            <translation><!-- Fund Partner Analyst Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Partner External Wholesaler</masterLabel>
+            <translation><!-- Fund Partner External Wholesaler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Partner National Accounts Contact</masterLabel>
+            <translation><!-- Fund Partner National Accounts Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund Partner Sales Manager</masterLabel>
+            <translation><!-- Fund Partner Sales Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll Provider General Contact</masterLabel>
+            <translation><!-- Payroll Provider General Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll Provider-Primary Contact (DB)</masterLabel>
+            <translation><!-- Payroll Provider-Primary Contact (DB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll Provider-Primary Contact (DC)</masterLabel>
+            <translation><!-- Payroll Provider-Primary Contact (DC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payroll Provider-Primary Contact (NQ)</masterLabel>
+            <translation><!-- Payroll Provider-Primary Contact (NQ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Administrative Fiduciary</masterLabel>
+            <translation><!-- Plan Sponsor Administrative Fiduciary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Administrator</masterLabel>
+            <translation><!-- Plan Sponsor Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Committee Member</masterLabel>
+            <translation><!-- Plan Sponsor Committee Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Compliance Contact</masterLabel>
+            <translation><!-- Plan Sponsor Compliance Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Consultant</masterLabel>
+            <translation><!-- Plan Sponsor Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Day to Day Admin</masterLabel>
+            <translation><!-- Plan Sponsor Day to Day Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Executive</masterLabel>
+            <translation><!-- Plan Sponsor Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor General Contact</masterLabel>
+            <translation><!-- Plan Sponsor General Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Investment Contact</masterLabel>
+            <translation><!-- Plan Sponsor Investment Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Investment Fiduciary</masterLabel>
+            <translation><!-- Plan Sponsor Investment Fiduciary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Payroll Administrator</masterLabel>
+            <translation><!-- Plan Sponsor Payroll Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor Payroll Contact</masterLabel>
+            <translation><!-- Plan Sponsor Payroll Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor-Authorized Signor</masterLabel>
+            <translation><!-- Plan Sponsor-Authorized Signor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor-Client Administrative Contact</masterLabel>
+            <translation><!-- Plan Sponsor-Client Administrative Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor-Client Key Executive</masterLabel>
+            <translation><!-- Plan Sponsor-Client Key Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor-Client Key Finance</masterLabel>
+            <translation><!-- Plan Sponsor-Client Key Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor-Client Key HR</masterLabel>
+            <translation><!-- Plan Sponsor-Client Key HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor-Primary Contact (DB)</masterLabel>
+            <translation><!-- Plan Sponsor-Primary Contact (DB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor-Primary Contact (DC)</masterLabel>
+            <translation><!-- Plan Sponsor-Primary Contact (DC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan Sponsor-Primary Contact (NQ)</masterLabel>
+            <translation><!-- Plan Sponsor-Primary Contact (NQ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer</masterLabel>
+            <translation><!-- Producer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proxy Reviewer</masterLabel>
+            <translation><!-- Proxy Reviewer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIA</masterLabel>
+            <translation><!-- RIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH - Accountant</masterLabel>
+            <translation><!-- TH - Accountant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH - Business Manager</masterLabel>
+            <translation><!-- TH - Business Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH - Consultant</masterLabel>
+            <translation><!-- TH - Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH - Fund Administrator</masterLabel>
+            <translation><!-- TH - Fund Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH - Fund Counsel</masterLabel>
+            <translation><!-- TH - Fund Counsel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH - Labor Trustee</masterLabel>
+            <translation><!-- TH - Labor Trustee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH - Management Trustee</masterLabel>
+            <translation><!-- TH - Management Trustee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH - McMorgan Contact</masterLabel>
+            <translation><!-- TH - McMorgan Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TH - TPA Rep</masterLabel>
+            <translation><!-- TH - TPA Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TPA (Sales) Rep</masterLabel>
+            <translation><!-- TPA (Sales) Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TPA Accountant</masterLabel>
+            <translation><!-- TPA Accountant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TPA Administrator</masterLabel>
+            <translation><!-- TPA Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TPA Consultant</masterLabel>
+            <translation><!-- TPA Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TPA Fund Administrator</masterLabel>
+            <translation><!-- TPA Fund Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TPA Fund Counsel</masterLabel>
+            <translation><!-- TPA Fund Counsel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TPA Owner/Principle</masterLabel>
+            <translation><!-- TPA Owner/Principle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trustee Firm Business Contact</masterLabel>
+            <translation><!-- Trustee Firm Business Contact --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>RPS_Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Advisor</masterLabel>
+            <translation><!-- Advisor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Contact</masterLabel>
+            <translation><!-- Business Contact --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>RPS_Contact__c</name>
+        <relationshipLabel><!-- Associated Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Elite Advisor? --></label>
+        <name>RPS_Elite_Advisor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>RPS_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>RPS_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enterprise Total AUM --></label>
+        <name>RPS_Enterprise_Total_AUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPS External Associated Individual ID --></label>
+        <name>RPS_External_Associated_Individual_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signature Total AUM --></label>
+        <name>RPS_GA_Total_AUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Grandparent Value --></label>
+        <name>RPS_Grandparent_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID --></label>
+        <name>RPS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Contact? --></label>
+        <name>RPS_Key_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing City --></label>
+        <name>RPS_Mailing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Geolocation --></label>
+        <name>RPS_Mailing_Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Street --></label>
+        <name>RPS_Mailing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Zip/Postal Code --></label>
+        <name>RPS_Mailing_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Value --></label>
+        <name>RPS_Parent_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>RPS_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Message --></label>
+        <name>RPS_Primary_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>RPS_Primary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referenceable Effective Date --></label>
+        <name>RPS_Referenceable_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>RPS_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- TRS Total AUM --></label>
+        <name>RPS_TRS_Total_AUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total AUM As Of Date --></label>
+        <name>RPS_Total_AUM_As_Of_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total AUM --></label>
+        <name>RPS_Total_AUM__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- RPS_New_Contact --></label>
+        <name>RPS_New_Contact</name>
+    </webLinks>
+</CustomObjectTranslation>

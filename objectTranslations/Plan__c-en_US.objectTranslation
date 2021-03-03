@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Plan Code --></label>
+        <name>Plan_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Sponsor --></label>
+        <name>Plan_Sponsor__c</name>
+        <relationshipLabel><!-- Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plan Sub-Type --></label>
+        <name>Plan_Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>401(k)</masterLabel>
+            <translation><!-- 401(k) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Plan Type --></label>
+        <name>Plan_Type__c</name>
+        <picklistValues>
+            <masterLabel>Defined Contribution Plan</masterLabel>
+            <translation><!-- Defined Contribution Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Timezone --></label>
+        <name>Timezone__c</name>
+        <picklistValues>
+            <masterLabel>EST (UTC-5)</masterLabel>
+            <translation><!-- EST (UTC-5) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PST (UTC-8)</masterLabel>
+            <translation><!-- PST (UTC-8) --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
