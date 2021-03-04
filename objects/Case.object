@@ -27,7 +27,7 @@
     </fields>
     <fields>
         <fullName>PotentialLiability__c</fullName>
-        <description>force change</description>
+        <description>Added via Copado</description>
         <externalId>false</externalId>
         <label>Potential Liability</label>
         <required>false</required>
