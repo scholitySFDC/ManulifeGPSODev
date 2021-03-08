@@ -156,6 +156,7 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Plan</label>
     <nameField>
+        <encryptionScheme>None</encryptionScheme>
         <label>Plan Name</label>
         <type>Text</type>
     </nameField>
