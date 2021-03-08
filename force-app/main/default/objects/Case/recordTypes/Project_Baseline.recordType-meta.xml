@@ -3,6 +3,7 @@
     <fullName>Project_Baseline</fullName>
     <active>true</active>
     <businessProcess>Project - Standard</businessProcess>
+    <compactLayoutAssignment>Project_Compact_Layout</compactLayoutAssignment>
     <description>Baseline project container modeled as Case</description>
     <label>Project - Baseline</label>
     <picklistValues>
@@ -77,6 +78,67 @@
         </values>
         <values>
             <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PotentialLiability__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>GC1020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC1040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC1060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC3060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC5060</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SLAViolation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
             <default>false</default>
         </values>
     </picklistValues>
