@@ -37,8 +37,16 @@
                     <value>1440</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Task by Owner</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>reportFilter</name>
+                    <value>Case.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>reportName</name>
-                    <value>Task_by_Owner_BTU</value>
+                    <value>Task_by_Owner_Filter_By_NHa</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showRefreshButton</name>
@@ -58,8 +66,12 @@
                     <value>1440</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
+                    <name>reportFilter</name>
+                    <value>Case.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>reportName</name>
-                    <value>Task_Status_ndA</value>
+                    <value>Task_Status_Filter_By_VPO</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showRefreshButton</name>
@@ -181,6 +193,18 @@
                 <componentName>flexipage:tabset</componentName>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>runtime_industries_actionplan:listCard</componentName>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
         <name>right_sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
@@ -196,7 +220,7 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>placeholderTodo</componentName>
+                <componentName>lwcProjectTaskTable</componentName>
             </componentInstance>
         </itemInstances>
         <name>Facet-e6d881a0-b725-447f-9e46-c74e53c61a95</name>

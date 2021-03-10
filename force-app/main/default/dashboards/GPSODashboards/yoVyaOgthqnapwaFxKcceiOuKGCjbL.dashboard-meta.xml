@@ -25,8 +25,8 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>Activity.Case__c</groupingColumn>
-                <groupingColumn>STATUS</groupingColumn>
+                <groupingColumn>Case$Subject</groupingColumn>
+                <groupingColumn>Case.Activities__r$Status</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
@@ -38,8 +38,8 @@
                     </groupingSorts>
                 </groupingSortProperties>
                 <header>Task by Project</header>
-                <legendPosition>Right</legendPosition>
-                <report>GPSOReports/Task_by_Project_9sM</report>
+                <legendPosition>Bottom</legendPosition>
+                <report>unfiled$public/Task_by_Project_Filter_By_sYL</report>
                 <showPercentage>false</showPercentage>
                 <showValues>false</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -65,7 +65,7 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>STATUS</groupingColumn>
+                <groupingColumn>Case.Activities__r$Status</groupingColumn>
                 <groupingSortProperties>
                     <groupingSorts>
                         <groupingLevel>g1</groupingLevel>
@@ -74,7 +74,8 @@
                 </groupingSortProperties>
                 <header>Task Status</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>GPSOReports/Task_Status_ndA</report>
+                <maxValuesDisplayed>6</maxValuesDisplayed>
+                <report>unfiled$public/Task_Status_Filter_By_VPO</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -87,12 +88,12 @@
         <numberOfColumns>12</numberOfColumns>
         <rowHeight>36</rowHeight>
     </dashboardGridLayout>
-    <dashboardType>SpecifiedUser</dashboardType>
+    <dashboardType>LoggedInUser</dashboardType>
     <description>Plan Support Manager Dashboard</description>
     <isGridLayout>true</isGridLayout>
-    <runningUser>ashish_nigam@jhancock.com</runningUser>
+    <runningUser>jose.vega@perficient.com</runningUser>
     <textColor>#000000</textColor>
-    <title>PlanSupportManager_DB</title>
+    <title>Plan Support Manager</title>
     <titleColor>#000000</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

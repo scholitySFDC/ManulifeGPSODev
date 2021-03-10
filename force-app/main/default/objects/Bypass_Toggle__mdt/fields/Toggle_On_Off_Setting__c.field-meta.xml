@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Toggle_On_Off_Setting__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>On/off toggle for the process criteria</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Toggle On for the flow/criteria node to be skipped</inlineHelpText>
+    <label>Toggle On/Off Setting</label>
+    <type>Checkbox</type>
+</CustomField>
