@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>RT Enterprise Project DName</label>
+    <protected>false</protected>
+    <values>
+        <field>Boolean_Value__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Config_Item__c</field>
+        <value xsi:type="xsd:string">Multiple Uses</value>
+    </values>
+    <values>
+        <field>Country__c</field>
+        <value xsi:type="xsd:string">USA</value>
+    </values>
+    <values>
+        <field>Decimal_Value__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">Case - US - Record Type - Developer Name - Enterprise Project</value>
+    </values>
+    <values>
+        <field>Number_Value__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:string">Active</value>
+    </values>
+    <values>
+        <field>Text_Area_Long_Value__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Text_Value__c</field>
+        <value xsi:type="xsd:string">Project_Baseline</value>
+    </values>
+</CustomMetadata>

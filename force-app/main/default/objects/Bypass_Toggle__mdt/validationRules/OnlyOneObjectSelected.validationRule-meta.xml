@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnlyOneObjectSelected</fullName>
+    <active>true</active>
+    <description>User can only select one object.</description>
+    <errorConditionFormula>NOT(ISBLANK(TEXT(Object__c))) &amp;&amp; NOT(ISBLANK(TEXT(Other_Objects__c)))</errorConditionFormula>
+    <errorMessage>You can select either an Object or Other Object. You cannot select a picklist in both.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Config_Item__c</fullName>
+    <defaultValue>&quot;Multiple Uses&quot;</defaultValue>
+    <description>Specifies the configuration item the CMDT is referenced in.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Specify the configuration item the CMDT is referenced in.</inlineHelpText>
+    <label>Config Item</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Apex</fullName>
+                <default>true</default>
+                <label>Apex</label>
+            </value>
+            <value>
+                <fullName>Flow</fullName>
+                <default>false</default>
+                <label>Flow</label>
+            </value>
+            <value>
+                <fullName>Formula</fullName>
+                <default>false</default>
+                <label>Formula</label>
+            </value>
+            <value>
+                <fullName>Multiple Uses</fullName>
+                <default>false</default>
+                <label>Multiple Uses</label>
+            </value>
+            <value>
+                <fullName>Validation Rule</fullName>
+                <default>false</default>
+                <label>Validation Rule</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
