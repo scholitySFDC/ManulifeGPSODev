@@ -91,6 +91,7 @@
     <dashboardType>LoggedInUser</dashboardType>
     <description>Plan Support Manager Dashboard</description>
     <isGridLayout>true</isGridLayout>
+    <runningUser>jose.vega@perficient.com</runningUser>
     <textColor>#000000</textColor>
     <title>Plan Support Manager</title>
     <titleColor>#000000</titleColor>

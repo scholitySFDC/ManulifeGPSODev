@@ -301,4 +301,8 @@
         <enabled>true</enabled>
         <name>Generic_Configuration_Reference__mdt</name>
     </customMetadataTypeAccesses>
+    <customSettingAccesses>
+        <enabled>true</enabled>
+        <name>Org_Exception__c</name>
+    </customSettingAccesses>
 </Profile>
