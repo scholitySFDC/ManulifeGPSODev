@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bypass_Process_Builders__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether to bypass process builders for the user or profile</description>
+    <externalId>false</externalId>
+    <label>Bypass Process Builders</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
