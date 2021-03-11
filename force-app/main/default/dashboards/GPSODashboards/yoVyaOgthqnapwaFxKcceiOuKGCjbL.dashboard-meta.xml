@@ -37,7 +37,7 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Task by Project</header>
+                <header>Tasks by Project</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>unfiled$public/Task_by_Project_Filter_By_sYL</report>
                 <showPercentage>false</showPercentage>
@@ -91,6 +91,7 @@
     <dashboardType>LoggedInUser</dashboardType>
     <description>Plan Support Manager Dashboard</description>
     <isGridLayout>true</isGridLayout>
+    <runningUser>jose.vega@perficient.com</runningUser>
     <textColor>#000000</textColor>
     <title>Plan Support Manager</title>
     <titleColor>#000000</titleColor>

@@ -37,7 +37,7 @@
                         <sortOrder>a</sortOrder>
                     </groupingSorts>
                 </groupingSortProperties>
-                <header>Task by Owner</header>
+                <header>Tasks by Owner</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>GPSOReports/Stacked_Task_by_Owner_xOR</report>
                 <showPercentage>false</showPercentage>
@@ -90,7 +90,7 @@
     </dashboardGridLayout>
     <dashboardType>LoggedInUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>ashish_nigam@jhancock.com</runningUser>
+    <runningUser>jose.vega@perficient.com</runningUser>
     <textColor>#000000</textColor>
     <title>Onboarding Manager</title>
     <titleColor>#000000</titleColor>
