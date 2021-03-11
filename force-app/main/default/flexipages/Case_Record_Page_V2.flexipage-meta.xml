@@ -236,6 +236,15 @@
                 <componentName>placeholderTodo</componentName>
             </componentInstance>
         </itemInstances>
+        <name>Facet-f299fdd0-de56-4a44-be19-c6ccaee31984</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>placeholderTodo</componentName>
+            </componentInstance>
+        </itemInstances>
         <name>Facet-l7cpt8kcg2g</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -305,6 +314,19 @@
                 <componentInstanceProperties>
                     <name>title</name>
                     <value>Standard.Tab.tasks</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-f299fdd0-de56-4a44-be19-c6ccaee31984</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Documents</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
             </componentInstance>
