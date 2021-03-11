@@ -38,7 +38,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>label</name>
-                    <value>Task by Owner</value>
+                    <value>Tasks by Owner</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>reportFilter</name>
@@ -64,6 +64,10 @@
                 <componentInstanceProperties>
                     <name>cacheAge</name>
                     <value>1440</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Task Status</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>reportFilter</name>
