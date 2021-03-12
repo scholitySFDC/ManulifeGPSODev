@@ -9,6 +9,7 @@ public inherited sharing class CActionPlanChildrenObject {
     public Date dueDate;
     @auraEnabled
     public String assignedTo;
+    @auraEnabled
     public Id taskId;
     public CActionPlanChildrenObject() {
 

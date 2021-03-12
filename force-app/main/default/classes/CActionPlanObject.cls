@@ -11,6 +11,7 @@ public inherited sharing class CActionPlanObject {
     public String assignedTo;
     @auraEnabled
     public List<CActionPlanChildrenObject> children;
+    @auraEnabled
     public Id actionPlanId;
 
     public CActionPlanObject() {

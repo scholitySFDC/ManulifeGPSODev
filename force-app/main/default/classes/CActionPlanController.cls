@@ -56,8 +56,6 @@ public inherited sharing class CActionPlanController {
                 Task taskItem = new Task();
                 taskItem = tasks.get(taskId);
                 
-                System.debug(String.valueOf(taskItem.OwnerId));
-                System.debug(String.valueOf(UserInfo.getUserId()));
                 if (scope == 'own' && String.valueOf(taskItem.OwnerId) != String.valueOf(UserInfo.getUserId())) continue;
 
                 CActionPlanChildrenObject childActionPlanObj = new CActionPlanChildrenObject();
@@ -72,38 +70,40 @@ public inherited sharing class CActionPlanController {
             actionPlanObj.children = childActionPlanObjs;
             actionPlanObjs.add(actionPlanObj);
         }
-
-        System.debug(actionPlanObjs);
-
-        // for(ActionPlanItem actionPlanItem: actionPlanItems) {
-        //     CActionPlanObject actionPlanObj = new CActionPlanObject();
-        //     actionPlanObj.taskName = actionPlanItem.Name;
-        //     actionPlanObj.taskNameUrl = System.URL.getSalesforceBaseUrl().toExternalForm()+'/'+actionPlanItem.Id;
-        //     actionPlanObj.taskStatus = actionPlanItem.ItemState;
-        //     actionPlanObj.dueDate = '10/20/2021';
-        //     actionPlanObj.assignedTo = actionPlanItem.ActionPlan.Owner.Name;
-
-        //     List<CActionPlanObject> childActionPlanObjs = new List<CActionPlanObject>();
-        //     for(Task task : tasks) {
-        //         if (task.Id == actionPlanItem.ItemId) {
-        //             CActionPlanObject childActionPlanObj = new CActionPlanObject();
-        //             childActionPlanObj.taskName = task.Subject;
-        //             childActionPlanObj.taskNameUrl = System.URL.getSalesforceBaseUrl().toExternalForm()+'/'+task.Id;
-        //             childActionPlanObj.taskStatus = task.Status;
-        //             childActionPlanObj.dueDate = '10/20/2021';
-        //             childActionPlanObj.assignedTo = task.Owner.Name;
-        //             childActionPlanObjs.add(actionPlanObj);
-        //         }
-        //     }
-
-        //     if (childActionPlanObjs.size() > 0) {
-        //         actionPlanObj.children = childActionPlanObjs;
-        //     }
-        //     actionPlanObjs.add(actionPlanObj);
-        // }
-
-        // System.debug(actionPlanObjs);
-
         return actionPlanObjs;
     } 
+
+    @AuraEnabled
+    public static void markRecordComplete(String recordId, String recordType){
+        try {
+            if (recordType.equals('ActionPlan')) {
+                markActionPlanComplete(recordId);
+            }
+            if (recordType.equals('Task')) {
+                markTaskComplete(recordId);
+            }
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
+
+    private static void markActionPlanComplete(Id actionPlanId) {
+        try {
+            ActionPlan ap = [SELECT ActionPlanState FROM ActionPlan WHERE Id = :actionPlanId];
+            ap.ActionPlanState = 'Complete';
+            update ap;
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
+
+    private static void markTaskComplete(Id taskId) {
+        try {
+            Task t = [SELECT Status FROM Task WHERE Id = :taskId];
+            t.Status = 'Completed';
+            update t;
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
 }

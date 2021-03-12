@@ -1,5 +1,6 @@
 import { LightningElement, api } from 'lwc';
 import getTasksByProject from '@salesforce/apex/CActionPlanController.getTasksByProject'
+import markRecordComplete from '@salesforce/apex/CActionPlanController.markRecordComplete'
 import {
     SAMPLE_COLUMNS_DEFINITION_BASIC,
     SAMPLE_DATA_BASIC
@@ -58,6 +59,27 @@ export default class LwcTable extends LightningElement {
         this.value = event.detail.value;
         console.log(this.value);
         this.getTasksByProjectData(this.value);
+    }
+
+    onRowAction(event) {
+        // const actionName = event.detail.action.name;
+        const clickedRowColumnContext = event.detail.row;
+        let scope = '';
+        let recordId = '';
+        if (clickedRowColumnContext.taskId != null) {
+            recordId = clickedRowColumnContext.taskId;
+            scope = 'Task';
+        } else if (clickedRowColumnContext.actionPlanId != null) {
+            recordId = clickedRowColumnContext.actionPlanId;
+            scope = 'ActionPlan';
+        }
+        console.log({recordId: recordId , recordType : scope});
+        markRecordComplete({recordId: recordId , recordType : scope}).then((response) => {
+            this.getTasksByProjectData(this.value);
+        }).catch(error => {
+            console.log(error);
+        });
+
     }
 
 }

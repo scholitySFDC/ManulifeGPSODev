@@ -26,6 +26,16 @@ export const SAMPLE_COLUMNS_DEFINITION_BASIC = [
             type: 'text',
             fieldName: 'assignedTo',
             label: 'Assigned To',
+        },
+        {
+            type: 'action',
+            fieldName: 'actions',
+            label: '',
+            typeAttributes: {
+                rowActions: [
+                    {label: "Mark Complete", name: 'markComplete'},
+                ]
+            }
         }
     ];
 
