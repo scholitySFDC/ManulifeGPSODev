@@ -1,0 +1,11 @@
+    <template>
+            <template if:true={account.data}>
+                <div class="slds-var-m-around_medium">
+                    <p>{name}</p>
+                    <p><lightning-formatted-phone value={phone}></lightning-formatted-phone></p>
+                </div>
+            </template>
+            <template if:true={account.error}>
+                <c-error-panel errors={account.error}></c-error-panel>
+            </template>
+    </template>
