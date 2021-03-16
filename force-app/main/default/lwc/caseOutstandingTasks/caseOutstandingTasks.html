@@ -30,9 +30,13 @@
       </br>
     </br>
   <footer class="slds-card__footer">
-    <a class="slds-card__footer-action" href="#">See Details
-      <span class="slds-assistive-text">Tasks</span>
-    </a>
+    <lightning-button 
+      variant="base" 
+      label="See Details" 
+      title="Tasks" 
+      onclick={redirectToOverdueTaskReport} 
+      class="slds-m-left_x-small">
+    </lightning-button>
   </footer>
         
     </div> 
