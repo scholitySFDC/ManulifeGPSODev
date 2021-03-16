@@ -17,6 +17,7 @@ export default class LwcTable extends LightningElement {
 
 
     connectedCallback() {
+        // this.recordId = '5004c000001pPYZAA2';
         this.getTasksByProjectData(this.value);
     }
 

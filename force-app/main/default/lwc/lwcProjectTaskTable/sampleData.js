@@ -9,6 +9,7 @@ export const SAMPLE_COLUMNS_DEFINITION_BASIC = [
             label: 'Task Name',
             typeAttributes: {
                 label: { fieldName: 'taskName' },
+                target : '_blank'
             },
         },
         {
